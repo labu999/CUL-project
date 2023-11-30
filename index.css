@@ -1,0 +1,84 @@
+:root {
+    --back-heading: url(abstract-art-sample-by-thaneeya.jpg);
+}
+
+.container,
+.container2 {
+    text-align: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.container {
+    row-gap: 10rem;
+}
+
+.container2 {
+    gap: 1rem;
+}
+
+@media (max-width: 600px) {
+    .container,
+    .container2 {
+        grid-template-columns: repeat(auto-fit, minmax(150px));
+    }
+
+    .container {
+        row-gap: 50px;
+    }
+
+    .container2 {
+        gap: 10px;
+    }
+}
+
+
+
+.b1{
+    text-align: center;
+    background-color: transparent;
+    height: auto;
+    width: 200px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    display: block;
+    -webkit-filter: drop-shadow(6px 6px 6px #4e4e4e);
+    filter: drop-shadow(6px 6px 6px #4e4e4e);  
+    transition: ease-in-out 0.2s;
+}
+.b1:active {
+    transform: scale(1.2);
+}
+.b1:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+    transform: rotate(0.01turn);
+}
+
+.bt1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.heading{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: var(--back-heading);
+    -webkit-text-stroke: 10px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 3px;
+    text-shadow: 10px 10px 10px #4e4e4e;
+    border-radius: 35px;  
+}
+
